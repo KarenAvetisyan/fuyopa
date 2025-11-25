@@ -103,52 +103,59 @@ document.addEventListener('DOMContentLoaded', function(){
         // dynamic swiper appear 
         function loadSwiperScript() {
                 return new Promise((resolve) => {
-                    const existingScript = document.querySelector('script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]');
-                    if (existingScript) {
-                        resolve(); 
+                        const existingScript = document.querySelector(
+                        'script[src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"]'
+                        );
+
+                        if (existingScript) {
+                        resolve();
                         return;
-                    }
-                    const swiperScript = document.createElement('script');
-                    swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
-                    swiperScript.async = true;
-            
-                    swiperScript.onload = () => {
-                        resolve(); 
-                    };
-            
-                    document.body.appendChild(swiperScript);
+                        }
+
+                        const swiperScript = document.createElement('script');
+                        swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+                        swiperScript.async = true;
+
+                        swiperScript.onload = () => resolve();
+                        document.body.appendChild(swiperScript);
                 });
         }
+
         const swiperObserverCallback = (entries) => {
-                entries.forEach(entry => {
+        entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                        loadSwiperScript().then(() => {
-                                var swiperPlans = document.querySelector('.swiperPlans');
-                                if(swiperPlans){
-                                        new Swiper(swiperPlans, {
-                                                loop: false,
-                                                speed: 400,
-                                                slidesPerView: 'auto',
-                                                spaceBetween: 40,
-                                                autoHeight: true,
-                                                slidesPerGroup: 1,   
-                                                pagination: {
-                                                        el: swiperPlans.querySelector('.swiper-pagination'),
-                                                        clickable: true,
-                                                },
-                                        });
-                                }
-                        
+
+                loadSwiperScript().then(() => {
+                        const swiperPlans = document.querySelector('.swiperPlans');
+
+                        if (swiperPlans) {
+                        new Swiper(swiperPlans, {
+                                loop: false,
+                                speed: 400,
+                                slidesPerView: 'auto',
+                                spaceBetween: 40,
+                                autoHeight: true,
+                                slidesPerGroup: 1,
+                                pagination: {
+                                el: swiperPlans.querySelector('.swiper-pagination'),
+                                clickable: true,
+                                },
                         });
-                        swiperObserver.disconnect(); 
-                }
+                        }
                 });
-        };
-        const swiperObserver = new IntersectionObserver(swiperObserverCallback);
-        const swiperContainer = document.querySelectorAll('.swiper'); 
-        swiperContainer.forEach(EL => {
-                swiperObserver.observe(EL);
+
+                swiperObserver.disconnect();
+                }
         });
+        };
+        const swiperObserver = new IntersectionObserver(swiperObserverCallback, {
+        rootMargin: '300px 0px', 
+        });
+
+        document.querySelectorAll('.swiper').forEach(el => {
+        swiperObserver.observe(el);
+        });
+
 
         // observer, анимация на скролле 
         const inViewport = (element, observer) => {
