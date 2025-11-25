@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Fuyopia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Seo description here.">
+    <meta name="keywords" content="Put keywords here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/grid.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/components.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/main.css">
+    <link fetchpriority="high" rel="preload" href="img/banner-img-desktop.webp" as="image">
+    <link fetchpriority="high" rel="preload" href="img/banner-img-mobile.svg" as="image">
+</head>
+<body>
+
+<div id="wrapper" lang="en">
+    <header class="header">
+        <div class="_container">
+            <div class="header-wrap">
+                <a href="/" class="header-logo _logo">
+                    <img src="logo.png" alt="logo">
+                </a>
+                <nav class="header-nav js-nav">
+                    <div class="header-nav__head _d-mx-l-flex">
+                        <div class="header-nav__head-txt">MENU</div>
+                        <div class="header-nav__head-logo"><img src="logo.png" alt="logo"></div>
+                    </div>
+                    <ul class="header-nav__list">
+                        <li>
+                            <a class="header-nav__link" href="#glavnaya">Главная</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="#funkcional">функционал</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="#podkluchenie">подключить</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="#process">процесс</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="#plani">планы</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="#kontaki">контакты</a>
+                        </li>
+                        <li>
+                            <a class="header-nav__link" href="#o-prilozhenii">О&nbsp;приложении</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-burger js-burger _d-mx-l-flex"><span></span></div>
+            </div>
+        </div>
+    </header>
+    <div class="tip _d-mn-m">
+        <div class="tip-wrap">
+            Мы находимся в поиске инвестора. Если у вас есть предложение - направьте его пожалуйста на нашу почту: 
+            <a class="tip-link" href="mailto:support1@example.com">
+                <i class="_sprite">
+                    <img src="img/mail-icon.svg" alt="mail">
+                </i>
+                support1@example.com
+            </a>
+        </div>
+    </div>
+    <main>
+        <section class="banner" id="glavnaya">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl-l-6 _d-mn-l">
+                        <div class="banner-img" data-inviewport="obs__bounce">
+                            <img src="img/banner-img-desktop.webp" alt="banner image">
+                        </div>
+                    </div>
+                    <div class="_cl-l-6">
+                        <div class="banner-info" data-inviewport="obs__bounce">
+                            <h1 data-inviewport="obs__moveTop"><span class="_c-green">Экономим</span> вместе!</h1>
+                             <div class="banner-img _d-mx-l" data-inviewport="obs__bounce">
+                                <img src="img/banner-img-mobile.svg" alt="banner image">
+                            </div>
+                            <p class="banner-info__txt" data-inviewport="obs__moveTop">В среднем, после подключения к нашему сервису, ресторан экономит в месяц: </p>
+                            <div class="banner-info__txt2 _c-green" data-inviewport="obs__moveBottom"><span>от</span> 100.000 руб.</div>
+                            <a href="#connect" class="banner-info__btn _secondaryBtn js-scrollTo" data-inviewport="obs__moveBottom">Подключить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overview _py">
+            <div class="_container _container-small">
+                <div class="overview-title" data-inviewport="obs__moveBottom">
+                    <h2>Управляй меню в режиме онлайн</h2>
+                </div>
+                <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
+                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-1-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-1-m.webp" alt="overview image">
+                </div>
+            </div>
+        </section>
+        <section class="overview _py">
+            <div class="_container _container-small">
+                <div class="overview-title" data-inviewport="obs__moveBottom" style="--blurbg: #00308f;">
+                    <h2>Управляй меню в режиме онлайн</h2>
+                </div>
+                <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
+                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-2-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-2-m.webp" alt="overview image">
+                </div>
+            </div>
+        </section>
+        <section class="overview _py">
+            <div class="_container _container-small">
+                <div class="overview-title" data-inviewport="obs__moveBottom" style="--blurbg: rgba(8, 192, 106, 0.594);">
+                    <h2 class="_d-mn-m">Создавайте официантов и давайте им&nbsp;доступ к мобильной панели,
+                    изучайте отзывы о персонале</h2>
+                    <h2 class="_d-mx-m">Изучайте отзывы о персонале</h2>
+                </div>
+                <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
+                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-3-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-3-m.webp" alt="overview image">
+                </div>
+            </div>
+        </section>
+        <section class="overview _py">
+            <div class="_container _container-small">
+                <div class="overview-title" data-inviewport="obs__moveBottom" style="--blurbg: #00308f;">
+                    <h2 class="_d-mn-l">Даже отзывы о пользователях приложения от ресторанов!</h2>
+                    <h2 class="_d-mx-l">Отзыв можно оставить только после заказа</h2>
+                </div>
+                <div class="overview-img__wrap" data-inviewport="obs__full-width">
+                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-4-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-4-m.webp" alt="overview image">
+                </div>
+            </div>
+        </section>
+        <section class="overview _py">
+            <div class="_container _container-small">
+                <div class="overview-title" data-inviewport="obs__moveBottom" style="--blurbg: rgba(8, 192, 106, 0.594);">
+                    <h2>Планируйте банкеты и<br> назначайте на них персонал</h2>
+                </div>
+                <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
+                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-5-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-5-m.webp" alt="overview image">
+                </div>
+            </div>
+        </section>
+        <section class="overview _py">
+            <div class="_container _container-small">
+                <div class="overview-title" data-inviewport="obs__moveBottom" style="--blurbg: #00308f;">
+                    <h2>Управляйте акциями <br>и&nbsp;лояльностью</h2>
+                </div>
+                <div class="overview-img__wrap" data-inviewport="obs__full-width">
+                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-6-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-6-m.webp" alt="overview image">
+                </div>
+            </div>
+        </section>
+        <section class="overview-more">
+            <div class="_container _text-center">
+                <h3 data-inviewport="obs__moveBottom">А так же многое другое!</h3>
+            </div>
+        </section>
+        <section class="connectInfo _py">
+            <div class="_container">
+                <div class="connectInfo-title" data-inviewport="obs__moveBottom">
+                    <h2>Подключи выгоду к своему ресторану!</h2>
+                    <div class="connectInfo-subtitle">Это даст вам привлекательные плюшки:</div>
+                </div>
+                <div class="connectInfo-wrap">
+                    <div class="connectInfo-item" data-inviewport="obs__bounce">
+                        <div class="connectInfo-item__icon _green">
+                            <img loading="lazy" src="img/Menu.png" alt="menu">
+                        </div>
+                        <div class="connectInfo-item__txt">
+                            Вам больше не нужна типографическая продукция. Меню можно легко изменить в личном кабинете.
+                        </div>
+                    </div>
+                    <div class="connectInfo-item" data-inviewport="obs__bounce">
+                        <div class="connectInfo-item__icon _blue">
+                            <img loading="lazy" src="img/Voucher.png" alt="check">
+                        </div>
+                        <div class="connectInfo-item__txt">
+                           Экономьте на чеках а так же на штрафах связанных с чеками.
+                        </div>
+                    </div>
+                    <div class="connectInfo-item" data-inviewport="obs__bounce">
+                        <div class="connectInfo-item__icon _blue">
+                            <img loading="lazy" src="img/users-icon.svg" alt="users">
+                        </div>
+                        <div class="connectInfo-item__txt">
+                           Ускоряйте обслуживание гостей, благодаря времени на принятии заказа и расчета гостей
+                        </div>
+                    </div>
+                    <div class="connectInfo-item" data-inviewport="obs__bounce">
+                        <div class="connectInfo-item__icon _green">
+                            <img loading="lazy" src="img/login.png" alt="login">
+                        </div>
+                        <div class="connectInfo-item__txt">
+                           Управляйте своим рестораном в удобном личном веб-кабинете.
+                        </div>
+                    </div>
+                </div>
+                <a href="#connect" class="_primaryBtn connectInfo-btn js-scrollTo" data-inviewport="obs__moveBottom">Подключить</a>
+            </div>
+        </section>
+        <section class="connect _py" id="connect">
+            <div class="_container">
+                <div class="connect-title" data-inviewport="obs__moveBottom">
+                    <h2>Подключение</h2>
+                </div>
+                <div class="_row">
+                    <div class="_cl-l-4">
+                        <div class="connect-details" data-inviewport="obs__full-width">
+                            <div class="connect-details__price">
+                                <span class="_c-green">$</span>&nbsp;<span class="_c-blue">0</span>&nbsp;USD
+                            </div>
+                            <div class="connect-details__txt">Зарегистрируйтесь в системе, что бы загрузить ваш ресторан в мобильное приложение: “Fuyopia”</div>
+                            <div class="connect-details__subtitle">Доступ</div>
+                            <ul class="connect-details__list">
+                                <li>Панель для администраторов и официантов</li>
+                                <li>Чат с гостем</li>
+                                <li>Лояльность</li>
+                                <li>И многое другое</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="_cl-l-8" data-inviewport="obs__moveBottom">
+                        <form class="_form connect-form" action="mail.php" method="POST" autocomplete="off">
+                            <div class="connect-form__wrap">
+                                <div class="connect-form__fields">
+                                    <div class="_form-group">
+                                        <div class="holder">Имя</div>
+                                        <input type="text" name="name" class="_form-group__input" placeholder="Полное имя">
+                                    </div>
+                                    <div class="_form-group">
+                                        <div class="holder">Email</div>
+                                        <input type="email" name="email" class="_email _req _form-group__input" placeholder="email@example.com">
+                                        <div class="req__text">Обязательное поле</div>
+                                        <div class="error__text">Пожалуйста, укажите корректный адрес</div>
+                                        <label class="connect-type" for="connectEmail">
+                                            <input type="checkbox" name="connect_email" id="connectEmail">
+                                            <span class="connect-type__holder"><img src="img/checked-icon.svg" alt="icon"></span>
+                                        </label>
+                                    </div>
+                                    <div class="_form-group">
+                                        <div class="holder">Телефон</div>
+                                        <input type="tel" name="phone" class="phone-mask _phone _req _form-group__input" placeholder="+7 (999) 000 00 00">
+                                        <div class="req__text">Обязательное поле</div>
+                                        <div class="error__text">Пожалуйста, укажите корректный номер</div>
+                                        <label class="connect-type" for="connectPhone">
+                                            <input type="checkbox" name="connect_phone" id="connectPhone">
+                                            <span class="connect-type__holder">
+                                                <img src="img/checked-icon.svg" alt="icon">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="connect-form__tips _d-mn-m">
+                                    <div class="connect-form__tip-item _blue">
+                                        <p>После отправки с вами свяжется менеджер для подключения заведения к сервису Fuyopia.</p>
+                                    </div>
+                                    <div class="connect-form__tip-item _blue">
+                                       <p>Активируйте галочку рядом с удобным способом для связи.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="connect-form__submit _primaryBtn">Подключить <img src="logo.png" alt="logo"></button>
+                            <p class="connect-type__mobile _d-mx-m _text-center">Активируйте галочку рядом с удобным способом для связи</p>
+                            <div class="_form-success _blue">
+                                <span class="_form-success__close">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.16363 0L23.7999 20.0081L21.6363 22.0088L0 2.00081L2.16363 0Z" fill="white" fill-opacity="0.66"/>
+                                        <path d="M21.6363 0L0 20.0081L2.16363 22.0088L23.7999 2.00081L21.6363 0Z" fill="#08C069"/>
+                                    </svg>
+                                </span>
+                                <p>Спасибо за ваше участие! С вами свяжется менеджер для подключения заведения к сервису Fuyopia.</p>
+                                <div class="logo">
+                                    <img loading="lazy" src="logo.png" alt="logo">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plans">
+            <div class="_container">
+                <div class="_row">
+                    <div class="_cl-l-5">
+                        <h2 data-inviewport="obs__moveBottom">Планы</h2>
+                    </div>
+                    <div class="_cl-l-7">
+                        <div class="swiper-plans__wrap" data-inviewport="obs__moveBottom">
+                            <div class="swiper swiperPlans" data-inviewport>
+                                <div class="swiper-wrapper">
+                                    <!-- slide 1 with 3 plans -->
+                                    <div class="swiper-slide">
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 2 with 3 plans -->
+                                    <div class="swiper-slide">
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 3 with 3 plans -->
+                                    <div class="swiper-slide">
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 4 with 3 plans -->
+                                    <div class="swiper-slide">
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                        <div class="plans-item">
+                                            <div class="plans-item__logo">
+                                                <span class="plans-item__logo-dot"></span>
+                                                <img loading="lazy" src="logo.png" alt="logo">
+                                            </div>
+                                            <div class="plans-item__date-wrap">
+                                                <div class="plans-item__date-year">2026</div>
+                                                <div class="plans-item__date-title">Название фичи</div>
+                                                <div class="plans-item__date-txt">Описание фичи</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="_container">
+            <div class="footer-top__wrap">
+                <a href="#" class="footer-logo _logo">
+                    <img loading="lazy" src="logo.png" alt="logo">
+                </a>
+                <div class="footer-socials">
+                    <ul class="footer-socials__list">
+                        <li><a class="_sprite" href="#" target="_blank"><img loading="lazy" src="img/instagram-icon.svg" alt="instagram"></a></li>
+                        <li><a class="_sprite" href="#" target="_blank"><img loading="lazy" src="img/facebook-icon.svg" alt="facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_row">
+                <div class="_cl-l-4">
+                    <nav class="footer-nav">
+                        <div class="footer-nav__head-txt">MENU</div>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <a class="footer-nav__link" href="#glavnaya">Главная</a>
+                            </li>
+                            <li>
+                                <a class="footer-nav__link" href="#funkcional">функционал</a>
+                            </li>
+                            <li>
+                                <a class="footer-nav__link" href="#podkluchenie">подключить</a>
+                            </li>
+                            <li>
+                                <a class="footer-nav__link" href="#process">процесс</a>
+                            </li>
+                            <li>
+                                <a class="footer-nav__link" href="#plani">планы</a>
+                            </li>
+                            <li>
+                                <a class="footer-nav__link" href="#kontaki">контакты</a>
+                            </li>
+                            <li>
+                                <a class="footer-nav__link" href="#o-prilozhenii">О&nbsp;приложении</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="_cl-l-8">
+                    <div class="footer-bottom__wrap">
+                        <div class="footer-support">
+                            <div class="footer-support__title _d-mn-m">Служба поддержки</div>
+                            <ul class="footer-support__list">
+                                <li><a href="mailto:support1@example.com">
+                                <i class="_sprite"><img src="img/mail-icon.svg" alt="mail"></i>
+                                support1@example.com</a></li>
+                                <li><a href="mailto:support1@example.com">
+                                <i class="_sprite"><img src="img/mail-icon.svg" alt="mail"></i>
+                                support1@example.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-details__wrap">
+                            <div class="footer-details">
+                                <ul class="footer-details__list">
+                                    <li>Реквизиты владельца сайта</li>
+                                    <li>Реквизиты владельца сайта</li>
+                                    <li>Реквизиты владельца сайта</li>
+                                </ul>
+                                <a href="#connect" class="_primaryBtn js-scrollTo">Подключить</a>
+                            </div>
+                            <div class="footer-apps">
+                                <a href="#"><img class="rustore" loading="lazy" src="img/rustore.png" alt="RuStore"></a>
+                                <a href="#"><img class="appstore" loading="lazy" src="img/appstore.png" alt="AppStore"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tip _d-mx-m">
+            <div class="tip-wrap">
+                Мы находимся в поиске инвестора. Если у вас есть предложение - направьте его пожалуйста на нашу почту: support1@example.com
+                <a class="tip-link" href="mailto:support1@example.com">
+                    <i class="_sprite">
+                        <img src="img/mail-icon.svg" alt="mail">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/form-send.js" defer></script>
+</body>
+</html>
+
