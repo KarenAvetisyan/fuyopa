@@ -65,40 +65,87 @@ document.addEventListener('DOMContentLoaded', function(){
         onscroll(window, headerScrolled)
         }
 
-        // якоря при клике
-        on('click', '.js-scrollTo', function(e) {
-        const href = this.getAttribute("href");
-        if (href && href.startsWith('#')) {
-                const targetElement = select(href);
-                if (targetElement) {
+        // 1. Smooth scroll on click
+        document.body.addEventListener('click', function(e) {
+        if (!e.target.matches('.js-scrollTo')) return;
+        let href = e.target.getAttribute('href');
+        if (!href) return;
+        if (href.startsWith('/')) href = href.slice(1);
+        if (href.startsWith('#')) {
+                const targetElement = document.querySelector(href);
+                if (!targetElement) return;
+
                 e.preventDefault();
-                const rect = targetElement.getBoundingClientRect();
-                const offsetTop = rect.top + window.scrollY - select('.header').offsetHeight;
-                scroll({
-                        top: offsetTop,
-                        behavior: "smooth"
-                });
+
+                const header = document.querySelector('.header');
+                const headerHeight = header ? header.offsetHeight : 0;
+                const duration = 800; // Faster scroll (800ms)
+                const start = window.scrollY;
+                let startTime = null;
+
+                function easeInOutQuad(t) {
+                return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t;
                 }
+
+                function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easedProgress = easeInOutQuad(progress);
+
+                // Recalculate target position dynamically
+                const targetY = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+                const scrollTo = start + (targetY - start) * easedProgress;
+
+                window.scrollTo(0, scrollTo);
+
+                if (progress < 1) {
+                        requestAnimationFrame(step);
+                }
+                }
+
+                requestAnimationFrame(step);
         }
         }, true);
-     
-        //  якоря при скролле 
-        let navbarlinks = select('.js-scrollActive', true)
+
+        
+        // 2. Active Nav on Scroll
+        let navs = select('.js-nav', true);
+
         const navbarlinksActive = () => {
-        let position = window.scrollY + 200
-        navbarlinks.forEach(navbarlink => {
-        if (!navbarlink.hash) return
-        let section = select(navbarlink.hash)
-        if (!section) return
-        if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-                navbarlink.classList.add('_active')
-        } else {
-                navbarlink.classList.remove('_active')
-        }
-        })
-        }
-        window.addEventListener('load', navbarlinksActive)
-        onscroll(document, navbarlinksActive)
+        let scrollPosition = window.scrollY + 200;
+        let pageBottom = document.documentElement.scrollHeight - window.innerHeight;
+        let reachedBottom = window.scrollY >= pageBottom - 5;
+
+        navs.forEach(nav => {
+                let links = select('.js-scrollTo', true, nav); 
+
+                links.forEach((link) => {
+                const href = link.getAttribute('href');
+                if (!href || !href.includes('#')) return;
+
+                const hash = href.substring(href.indexOf('#'));
+                const section = select(hash);
+                if (!section) return;
+
+                const top = section.offsetTop;
+                const bottom = top + section.offsetHeight;
+
+                if (reachedBottom && hash === '#footer') {
+                        select('.js-scrollTo[href="#footer"]', true).forEach(l => l.classList.add('_active'));
+                        return;
+                }
+                if (!reachedBottom && scrollPosition >= top && scrollPosition < bottom) {
+                        link.classList.add('_active');
+                } else {
+                        link.classList.remove('_active');
+                }
+                });
+        });
+        };
+
+        window.addEventListener('load', navbarlinksActive);
+        onscroll(document, navbarlinksActive);
 
         // dynamic swiper appear 
         function loadSwiperScript() {

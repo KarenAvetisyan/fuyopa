@@ -25,34 +25,34 @@
         <div class="_container">
             <div class="header-wrap">
                 <a href="/" class="header-logo _logo">
-                    <img src="logo.png" alt="logo">
+                    <img src="logo.svg" alt="logo">
                 </a>
                 <nav class="header-nav js-nav">
                     <div class="header-nav__head _d-mx-l-flex">
                         <div class="header-nav__head-txt">MENU</div>
-                        <div class="header-nav__head-logo"><img src="logo.png" alt="logo"></div>
+                        <div class="header-nav__head-logo"><img src="logo.svg" alt="logo"></div>
                     </div>
                     <ul class="header-nav__list">
                         <li>
-                            <a class="header-nav__link" href="#glavnaya">Главная</a>
+                            <a class="header-nav__link js-scrollTo" href="#glavnaya">Главная</a>
                         </li>
                         <li>
-                            <a class="header-nav__link" href="#funkcional">функционал</a>
+                            <a class="header-nav__link js-scrollTo" href="#funkcional">функционал</a>
                         </li>
                         <li>
-                            <a class="header-nav__link" href="#podkluchenie">подключить</a>
+                            <a class="header-nav__link js-scrollTo" href="#connect">подключить</a>
                         </li>
                         <li>
-                            <a class="header-nav__link" href="#process">процесс</a>
+                            <a class="header-nav__link js-scrollTo" href="#process">процесс</a>
                         </li>
                         <li>
-                            <a class="header-nav__link" href="#plani">планы</a>
+                            <a class="header-nav__link js-scrollTo" href="#plani">планы</a>
                         </li>
                         <li>
-                            <a class="header-nav__link" href="#kontaki">контакты</a>
+                            <a class="header-nav__link js-scrollTo" href="#footer">контакты</a>
                         </li>
                         <li>
-                            <a class="header-nav__link" href="#o-prilozhenii">О&nbsp;приложении</a>
+                            <a class="header-nav__link" href="b2c.html">О&nbsp;приложении</a>
                         </li>
                     </ul>
                 </nav>
@@ -60,48 +60,50 @@
             </div>
         </div>
     </header>
-    <div class="tip _d-mn-m">
-        <div class="tip-wrap">
-            Мы находимся в поиске инвестора. Если у вас есть предложение - направьте его пожалуйста на нашу почту: 
-            <a class="tip-link" href="mailto:support1@example.com">
-                <i class="_sprite">
-                    <img src="img/mail-icon.svg" alt="mail">
-                </i>
-                support1@example.com
-            </a>
-        </div>
-    </div>
     <main>
-        <section class="banner" id="glavnaya">
-            <div class="_container">
-                <div class="_row">
-                    <div class="_cl-l-6 _d-mn-l">
-                        <div class="banner-img">
-                            <img src="img/banner-img-desktop.webp" alt="banner image">
-                        </div>
-                    </div>
-                    <div class="_cl-l-6">
-                        <div class="banner-info">
-                            <h1><span class="_c-green">Экономим</span> вместе!</h1>
-                             <div class="banner-img _d-mx-l">
-                                <img src="img/banner-img-mobile.svg" alt="banner image">
+        <div id="glavnaya">
+            <div class="tip _d-mn-m">
+                <div class="tip-wrap">
+                    Мы находимся в поиске инвестора. Если у вас есть предложение - направьте его пожалуйста на нашу почту: 
+                    <a class="tip-link" href="mailto:support1@example.com">
+                        <i class="_sprite">
+                            <img src="img/mail-icon.svg" alt="mail">
+                        </i>
+                        support1@example.com
+                    </a>
+                </div>
+            </div>
+            <section class="banner">
+                <div class="_container">
+                    <div class="_row">
+                        <div class="_cl-l-6 _d-mn-l">
+                            <div class="banner-img">
+                                <img src="img/banner-img-desktop.webp" alt="banner image">
                             </div>
-                            <p class="banner-info__txt">В среднем, после подключения к нашему сервису, ресторан экономит в месяц: </p>
-                            <div class="banner-info__txt2 _c-green"><span>от</span>&nbsp;100.000&nbsp;руб.</div>
-                            <a href="#connect" class="banner-info__btn _secondaryBtn js-scrollTo">Подключить</a>
+                        </div>
+                        <div class="_cl-l-6">
+                            <div class="banner-info">
+                                <h1><span class="_c-green">Экономим</span> вместе!</h1>
+                                <div class="banner-img _d-mx-l">
+                                    <img src="img/banner-img-mobile.svg" alt="banner image">
+                                </div>
+                                <p class="banner-info__txt">В среднем, после подключения к нашему сервису, ресторан экономит в месяц: </p>
+                                <div class="banner-info__txt2 _c-green"><span>от</span>&nbsp;100.000&nbsp;руб.</div>
+                                <a href="#connect" class="banner-info__btn _secondaryBtn js-scrollTo">Подключить</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="overview _py">
+            </section>
+        </div>
+        <section class="overview _py" id="funkcional">
             <div class="_container _container-small">
                 <div class="overview-title" data-inviewport="obs__moveBottom">
                     <h2>Управляй меню в режиме онлайн</h2>
                 </div>
                 <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
-                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-1-d.webp" alt="overview image">
-                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-1-m.webp" alt="overview image">
+                    <img class="overview-img _d-mn-m" height="809" loading="lazy" src="img/overview-1-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" height="618" loading="lazy" src="img/overview-1-m.webp" alt="overview image">
                 </div>
             </div>
         </section>
@@ -111,8 +113,8 @@
                     <h2>Управляй меню в режиме онлайн</h2>
                 </div>
                 <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
-                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-2-d.webp" alt="overview image">
-                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-2-m.webp" alt="overview image">
+                    <img class="overview-img _d-mn-m" height="579" loading="lazy" src="img/overview-2-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" height="560" loading="lazy" src="img/overview-2-m.webp" alt="overview image">
                 </div>
             </div>
         </section>
@@ -124,8 +126,8 @@
                     <h2 class="_d-mx-m">Изучайте отзывы о персонале</h2>
                 </div>
                 <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
-                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-3-d.webp" alt="overview image">
-                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-3-m.webp" alt="overview image">
+                    <img class="overview-img _d-mn-m" height="781" loading="lazy" src="img/overview-3-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" height="781" loading="lazy" src="img/overview-3-m.webp" alt="overview image">
                 </div>
             </div>
         </section>
@@ -136,8 +138,8 @@
                     <h2 class="_d-mx-l">Отзыв можно оставить только после заказа</h2>
                 </div>
                 <div class="overview-img__wrap" data-inviewport="obs__full-width">
-                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-4-d.webp" alt="overview image">
-                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-4-m.webp" alt="overview image">
+                    <img class="overview-img _d-mn-m" height="834" loading="lazy" src="img/overview-4-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" height="561" loading="lazy" src="img/overview-4-m.webp" alt="overview image">
                 </div>
             </div>
         </section>
@@ -147,8 +149,8 @@
                     <h2>Планируйте банкеты и<br> назначайте на них персонал</h2>
                 </div>
                 <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
-                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-5-d.webp" alt="overview image">
-                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-5-m.webp" alt="overview image">
+                    <img class="overview-img _d-mn-m" height="834" loading="lazy" src="img/overview-5-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" height="841" loading="lazy" src="img/overview-5-m.webp" alt="overview image">
                 </div>
             </div>
         </section>
@@ -158,8 +160,8 @@
                     <h2>Управляйте акциями <br>и&nbsp;лояльностью</h2>
                 </div>
                 <div class="overview-img__wrap _full-screen" data-inviewport="obs__full-width">
-                    <img class="overview-img _d-mn-m" loading="lazy" src="img/overview-6-d.webp" alt="overview image">
-                    <img class="overview-img _d-mx-m" loading="lazy" src="img/overview-6-m.webp" alt="overview image">
+                    <img class="overview-img _d-mn-m" height="834" loading="lazy" src="img/overview-6-d.webp" alt="overview image">
+                    <img class="overview-img _d-mx-m" height="834" loading="lazy" src="img/overview-6-m.webp" alt="overview image">
                 </div>
             </div>
         </section>
@@ -168,7 +170,7 @@
                 <h3 data-inviewport="obs__moveBottom">А так же многое другое!</h3>
             </div>
         </section>
-        <section class="connectInfo _py">
+        <section class="connectInfo _py" id="process">
             <div class="_container">
                 <div class="connectInfo-title" data-inviewport="obs__moveBottom">
                     <h2>Подключи выгоду к своему ресторану!</h2>
@@ -272,7 +274,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="connect-form__submit _primaryBtn">Подключить <img src="logo.png" alt="logo"></button>
+                            <button type="submit" class="connect-form__submit _primaryBtn">Подключить <img src="logo.svg" alt="logo"></button>
                             <p class="connect-type__mobile _d-mx-m _text-center">Активируйте галочку рядом с удобным способом для связи</p>
                             <div class="_form-success _blue">
                                 <span class="_form-success__close">
@@ -283,7 +285,7 @@
                                 </span>
                                 <p>Спасибо за ваше участие! С вами свяжется менеджер для подключения заведения к сервису Fuyopia.</p>
                                 <div class="logo">
-                                    <img loading="lazy" src="logo.png" alt="logo">
+                                    <img loading="lazy" src="logo.svg" alt="logo">
                                 </div>
                             </div>
                         </form>
@@ -291,7 +293,7 @@
                 </div>
             </div>
         </section>
-        <section class="plans">
+        <section class="plans" id="plani">
             <div class="_container">
                 <div class="_row">
                     <div class="_cl-l-5">
@@ -306,7 +308,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -317,7 +319,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -328,7 +330,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -342,7 +344,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -353,7 +355,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -364,7 +366,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -378,7 +380,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -389,7 +391,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -400,7 +402,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -414,7 +416,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -425,7 +427,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -436,7 +438,7 @@
                                         <div class="plans-item">
                                             <div class="plans-item__logo">
                                                 <span class="plans-item__logo-dot"></span>
-                                                <img loading="lazy" src="logo.png" alt="logo">
+                                                <img loading="lazy" src="logo.svg" alt="logo">
                                             </div>
                                             <div class="plans-item__date-wrap">
                                                 <div class="plans-item__date-year">2026</div>
@@ -454,11 +456,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="_container">
             <div class="footer-top__wrap">
                 <a href="#" class="footer-logo _logo">
-                    <img loading="lazy" src="logo.png" alt="logo">
+                    <img loading="lazy" src="logo.svg" alt="logo">
                 </a>
                 <div class="footer-socials">
                     <ul class="footer-socials__list">
@@ -469,29 +471,29 @@
             </div>
             <div class="_row">
                 <div class="_cl-l-4">
-                    <nav class="footer-nav">
+                    <nav class="footer-nav js-nav">
                         <div class="footer-nav__head-txt">MENU</div>
                         <ul class="footer-nav__list">
                             <li>
-                                <a class="footer-nav__link" href="#glavnaya">Главная</a>
+                                <a class="footer-nav__link js-scrollTo" href="#glavnaya">Главная</a>
                             </li>
                             <li>
-                                <a class="footer-nav__link" href="#funkcional">функционал</a>
+                                <a class="footer-nav__link js-scrollTo" href="#funkcional">функционал</a>
                             </li>
                             <li>
-                                <a class="footer-nav__link" href="#podkluchenie">подключить</a>
+                                <a class="footer-nav__link js-scrollTo" href="#connect">подключить</a>
                             </li>
                             <li>
-                                <a class="footer-nav__link" href="#process">процесс</a>
+                                <a class="footer-nav__link js-scrollTo" href="#process">процесс</a>
                             </li>
                             <li>
-                                <a class="footer-nav__link" href="#plani">планы</a>
+                                <a class="footer-nav__link js-scrollTo" href="#plani">планы</a>
                             </li>
                             <li>
-                                <a class="footer-nav__link" href="#kontaki">контакты</a>
+                                <a class="footer-nav__link js-scrollTo" href="#footer">контакты</a>
                             </li>
                             <li>
-                                <a class="footer-nav__link" href="#o-prilozhenii">О&nbsp;приложении</a>
+                                <a class="footer-nav__link" href="b2c.html">О&nbsp;приложении</a>
                             </li>
                         </ul>
                     </nav>
