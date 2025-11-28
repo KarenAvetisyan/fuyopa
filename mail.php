@@ -1,6 +1,6 @@
 <?php
 // Настройки
-$to = "info@example.com";  
+$to = "fuyopia@ro.ru";  
 $from = "info@example.com"; 
 $fromName = "Новая заявка Fuyopia"; 
 
